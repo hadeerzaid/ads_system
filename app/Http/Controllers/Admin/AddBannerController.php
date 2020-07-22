@@ -56,15 +56,7 @@ class AddBannerController extends Controller
                 'frequency'=>$request->frequency
             ]);
            
-        //     if($request->hasFile('image')){
-        //       $image = $request->file('image');
-        //       $filename = time() . '.' . $image->getClientOriginalExtension();
-        //       Image::make($image)->resize(300, 300)->save( storage_path('/uploads/' . $filename ) );
-        //       $person->image = $filename;
-        //       $person->save();
-        //     };
-    
-        //   $person->save();
+      
     
           return redirect()->route('admin.addbaners.index')
             ->with('success','Item created successfully');
