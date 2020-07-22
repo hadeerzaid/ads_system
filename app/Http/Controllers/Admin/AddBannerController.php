@@ -39,9 +39,7 @@ class AddBannerController extends Controller
     public function store(Request $request)
     {
         
-      // return $request->all();
-          //save the data to the database
-         //return $request->file('image');
+     
             if ($request->has('image')) {
             
                 $fileName = General::uploadImage('addbaners',$request->file('image'));
